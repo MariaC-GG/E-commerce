@@ -21,20 +21,17 @@ color: var(--tex-color);
 .paginas{
 display: flex;
 }
-
 .paginas a{
-color: var(--other-color);
-font-size: var(--p-font);
-font-weight: bolder;
-margin: 0 30px;
-transition: a .55s ease;
-font-size: 20px;
+    position: relative;
+    font-size: 1.1rem;
+    color: #e7dbdb;
+    text-decoration: none;
+    transition: .5s;
 }
-
 .paginas a:hover{
     color: blueviolet;
-    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
-
+    border-bottom: 2px solid blueviolet;
+    transform: scale(0) translateY(50px);
 }
 
 .logo{

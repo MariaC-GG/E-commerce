@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>MC.A</title>
 </head>
 <body>
 <header>
-    <main>
-        <h2>cadastro</h2>
-        <br>
-        <div class="formulario">
-        <form action="" method="post">
-            <label for="nome"> Nome</label>
-            <input type="text" id="nome" placeholder="bote seu nome">
-            <br>
-            <label for="email"> Email</label>
-            <input type="email" id="email" placeholder="bote seu email">
-            <br>
-            <label for="telefone"> Telefone</label>
-            <input type="tel" id="telefone" placeholder="bote seu telefone">
-            <br>
-            <button type="submit">Enviar</button>
-    </form>
-    </div>
-    </main>
+    <div class="cadastro">
+        <span class="fechar-tela-x"><i class='bx bx-x'></i></span>
+        <div class="caixa_login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="caixa-input">
+                    <span class="iconnes"><i class='bx bxs-user' ></i></span>
+                    <input type="username" required>
+                    <label>Nome</label>
+                </div>
+                <div class="caixa-input">
+                    <span class="iconnes"><i class='bx bxs-envelope' ></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="caixa-input">
+                    <span class="iconnes"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="aceitar-politica">
+                    <label><input type="checkbox">Estou de acordo com os termos e condições</label>
+                </div>
+                <button type="submit"class="btn">Cadastrar</button>
+            </form>
+        </div>
+      </div>
 </header>
 </body>
 </html>
